@@ -1,6 +1,7 @@
 FROM tiangolo/nginx-rtmp
 
 COPY nginx.conf /etc/nginx/nginx.conf
+
 COPY autoload.php /www/
 COPY database.php /www/
 COPY functions.php /www/
