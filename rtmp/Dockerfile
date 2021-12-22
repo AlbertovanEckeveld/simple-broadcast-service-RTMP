@@ -9,3 +9,4 @@ COPY index.php /www/
 COPY login.php /www/
 COPY signup.php /www/
 COPY index.html /www/
+COPY style.css /www/
