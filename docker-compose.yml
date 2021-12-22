@@ -17,3 +17,5 @@ services:
 
   php:
     image: php:7-fpm
+    volumes:
+      - ./data:/tmp/hls
