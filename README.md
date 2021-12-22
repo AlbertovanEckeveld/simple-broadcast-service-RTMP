@@ -17,4 +17,4 @@ Choose your broadcast sofware:
     Choose at Server    'rtmp://<localhost/ip>:1935/live
     Choose at Streamkey 'test?key=supersecret'
 
-Open a browser search `http://<localhost/ip> to view your live stream!
+Open a browser search `http://<localhost/ip>` to view your live stream!
