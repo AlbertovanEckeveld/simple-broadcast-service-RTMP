@@ -1,5 +1,4 @@
 FROM tiangolo/nginx-rtmp
-FROM php:7.4-cli
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY autoload.php /www/
