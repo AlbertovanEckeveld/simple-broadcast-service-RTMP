@@ -7,6 +7,7 @@ services:
       - "8080:80"
     container_name: rtmp_server
     volumes:
+      - .:/www
       - ./data:/tmp/hls
     links:
       - php
@@ -19,4 +20,4 @@ services:
     container_name: php_server
     image: php:7-fpm
     volumes:
-      - ./data:/tmp/hls
+      - .:/www
