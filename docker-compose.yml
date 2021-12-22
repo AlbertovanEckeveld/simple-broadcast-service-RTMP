@@ -4,7 +4,7 @@ services:
     build: ./rtmp
     ports:
       - "1935:1935"
-      - "80:8080"
+      - "8080:80"
     container_name: rtmp_server
     volumes:
       - ./data:/tmp/hls
@@ -16,6 +16,7 @@ services:
     container_name: auth_server
 
   php:
+    container_name: php_server
     image: php:7-fpm
     volumes:
-      - ./data:/tmp/hls
+      - ./rtmp:/
